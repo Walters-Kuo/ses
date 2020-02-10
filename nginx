@@ -1,0 +1,7 @@
+if ($host ~* ^(example\.com|www\.example\.com)$ ){
+  rewrite  ^/(.*)$  https://example.com/$1  permanent;
+  //or
+  return         301 https://$server_name$request_uri;
+}
+
+if ($host ~* ^(walters\.in|www\.walters\.in)$ ){
